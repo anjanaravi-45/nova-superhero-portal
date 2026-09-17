@@ -407,7 +407,10 @@ async function submitRequest() {
                         age: visitor.age,
                         location: visitor.location,
                         email: visitor.email,
-                        grievance: visitor.grievance
+                        grievance: visitor.grievance,
+                        _replyto: visitor.email,
+                        _cc: visitor.email,
+                        _subject: "Nova Signal Received"
                     })
                 }
             );
